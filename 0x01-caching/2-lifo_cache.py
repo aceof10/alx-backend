@@ -4,6 +4,10 @@ BaseCaching = __import__("base_caching").BaseCaching
 
 
 class LIFOCache(BaseCaching):
+    """
+    LIFO caching system that removes the most recently
+    added item when the limit is exceeded.
+    """
     def __init__(self):
         """constructor"""
         super().__init__()
